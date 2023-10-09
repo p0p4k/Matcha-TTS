@@ -3,7 +3,7 @@ default_language_version:
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v4.5.0
     hooks:
       # list of supported hooks: https://pre-commit.com/hooks.html
       - id: trailing-whitespace
@@ -32,7 +32,7 @@ repos:
 
   # python upgrading syntax to newer version
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.14.0
+    rev: v3.15.0
     hooks:
       - id: pyupgrade
         args: [--py38-plus]
@@ -54,6 +54,6 @@ repos:
 
   # pylint
   - repo: https://github.com/pycqa/pylint
-    rev: v3.0.0
+    rev: v3.0.1
     hooks:
     -   id: pylint
